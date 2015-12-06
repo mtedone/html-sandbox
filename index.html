@@ -1,10 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>HTML Practice</title>
-        <link rel="stylesheet" href="style.css" >
+        <title>Javascript</title>
+        <script src="jquery-2.1.4.js"></script>
+        <script src="practice.js"></script>        
     </head>
+    <style>
+        .red-text {
+            color: red;
+        }
+        
+        .border-red {
+            border: 1px solid red;
+        }
+    
+    </style>
     <body>
-        <h1>Welcome to my website</h1>
+        <h1 id="main-heading">Hello World</h1>
+        
+        <p class="para">Ubi anim occaecat. Commodo id laboris, officia ab tamen. Incididunt aliqua 
+            admodum quibusdam non nostrud ad tamen consequat ut amet ne proident o irure 
+            ingeniis aut multos sint. Dolore possumus tempor, enim commodo transferrem. 
+            Aliquip quis tempor, iis ad quem labore varias ex eram ullamco de lorem summis 
+            te appellat relinqueret sed vidisse sed non quae voluptate, multos nescius si 
+            senserit, si fore commodo expetendis o ne ipsum eruditionem. </p>
+        
+        <p class="para">Ubi anim occaecat. Commodo id laboris, officia ab tamen. Incididunt aliqua 
+            admodum quibusdam non nostrud ad tamen consequat ut amet ne proident o irure 
+            ingeniis aut multos sint. Dolore possumus tempor, enim commodo transferrem. 
+            Aliquip quis tempor, iis ad quem labore varias ex eram ullamco de lorem summis 
+            te appellat relinqueret sed vidisse sed non quae voluptate, multos nescius si 
+            senserit, si fore commodo expetendis o ne ipsum eruditionem. </p>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+               $(".para").click(function() {
+                   $(this).addClass("border-red");
+               }); 
+            });
+            
+        </script>
     </body>
 </html>
